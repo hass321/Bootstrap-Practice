@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>Bootstrap - Rows</title>
+    <style>
+        .style{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        .content:nth-child(even){
+            background: #ddd;
+            padding: 35px;
+        }
+        .content:nth-child(odd){
+            background: #eee;
+            padding: 35px;
+        }
+        .thumb:nth-child(even){
+            background: #ddd;
+            padding: 35px;
+            text-align: center
+        }
+        .thumb:nth-child(odd){
+            background: #eee;
+            padding: 35px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="style">
+        <h1>Rows</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12 content">
+                    <h3>Content</h3>
+                    <p><strong>Large Screens: </strong>8 columns wide</p>
+                    <p><strong>Medium Screens: </strong>6 columns wide</p>
+                    <p><strong>Small Screens: </strong>12 columns wide</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 content">
+                    <h3>SideBar</h3>
+                    <p><strong>Large Screens: </strong>4 columns wide</p>
+                    <p><strong>Medium Screens: </strong>6 columns wide</p>
+                    <p><strong>Small Screens: </strong>12 columns wide</p> 
+                </div>
+            </div>
+            <div class="row" style="margin-top:20px;">
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
